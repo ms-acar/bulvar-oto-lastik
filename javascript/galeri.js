@@ -180,8 +180,8 @@ function createGalleryCards(filter = 'all') {
         const card = `
             <div class="col-md-3 col-sm-6 mb-4">
                 <figure class="snip1581">
-                    <img src="../images/galeri/img (${item.id}) ${item.category}.jpg" alt="Galeri ${item.id}"/>
-                    <a href="../images/galeri/img (${item.id}) ${item.category}.jpg" data-lightbox="gallery" data-title="Bulvar Oto Lastik"></a>
+                    <img src="images/galeri/img (${item.id}) ${item.category}.jpg" alt="Galeri ${item.id}"/>
+                    <a href="images/galeri/img (${item.id}) ${item.category}.jpg" data-lightbox="gallery" data-title="Bulvar Oto Lastik"></a>
                 </figure>
             </div>
         `;
