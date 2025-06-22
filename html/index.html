@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bulvar Oto Lastik, mevsime uygun lastik seçimi, değişim ve bakım hizmetleriyle kaliteli ve güvenli hizmet sunar.">
+  <title>Tekirdağ Lastik Hizmeti | Güvenilir Oto Lastik Servisi | Bulvar Oto Lastik Malkara Petlas Bayii</title>
+  <link rel="icon" href="../images/logo/logo2.png">
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- <a href="tel:05427172233" class="floating-btn phone-btn text-decoration-none">
+    <div class="ripple-container">
+      <i class="fa fa-phone"></i>
+      <span class="ripple"></span>
+    </div>
+  </a> -->
+  
+  <a href="https://api.whatsapp.com/send?phone=905427172233" class="floating-btn whatsapp-btn text-decoration-none" target="_blank">
+    <div class="ripple-container">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="ripple"></span>
+    </div>
+  </a>
+  
+  <button id="scrollToTopBtn" class="floating-btn scroll-to-top-btn" title="Yukarı çık">
+    <i class="fa-solid fa-angles-up"></i>
+  </button>
+  
+  <!-- Header Üst Bilgi -->
+  <div class="row-sm-12 fixed-top header-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center py-1 text-light font-bold">
+        <div class="left-info">
+          <span><i class="fa-solid fa-phone"></i> 0542 717 22 33</span>
+        </div>
+        <div class="isim">
+          <span><i class="fa-solid fa-id-badge"></i> Halit REYHAN</span>
+        </div>
+        <div class="header-social">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="video-banner">
+    <div class="karartma"></div>
+    <video autoplay muted loop playsinline>
+      <source src="../videos/giris.mp4" type="video/mp4">
+      Tarayıcınız video etiketini desteklemiyor.
+    </video>
+    <!-- Aşağı Kaydır Simgesi -->
+    <div class="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 block lg:hidden">
+      <div class="text-white text-center">
+        <p class="text-light font-italic">Sayfanın devamı için kaydırınız...</p>
+        <i class="fa-solid fa-angle-down" id="bounce-icon" style="font-size: 50px;"></i>
+      </div>
+    </div>
+  </div>
+
+  <nav class="fixed top-10 left-0 w-full bg-transparent z-50 transition-all duration-300 ease-in-out" id="navbar">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        <a href="index.html" class="flex items-center">
+             <img src="../images/logo/logo.png" alt="logo" class="h-20">
+        </a>
+        <div class="flex items-center lg:order-2">
+            <div class="hidden mt-2 mr-4 sm:inline-block">
+                <span></span>
+            </div>
+
+            <a href="tel:05427172233"
+            class="relative overflow-hidden text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800 ripple-effect-button">
+            <span class="relative z-10">Hemen Ara</span>
+          </a>
+            <button data-collapse-toggle="mobile-menu-2" type="button"
+				class="inline-flex items-center p-2 ml-1 text-sm text-gray-400 rounded-lg lg:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+				aria-controls="mobile-menu-2" aria-expanded="true">
+				<span class="sr-only">Menüyü Aç</span>
+				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+						clip-rule="evenodd"></path>
+				</svg>
+				<svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd"
+						d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+						clip-rule="evenodd"></path>
+				</svg>
+			</button>
+        </div>
+        <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                <li>
+                    <a href="index.html"
+                        class="block py-2 pl-3 pr-4 text-white bg-red-700 rounded lg:bg-transparent lg:text-red-500 lg:p-0 dark:text-white"
+                        aria-current="page">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="kurumsal.html"
+                        class="block py-2 pl-3 pr-4 text-white border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-red-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Kurumsal</a>
+                </li>
+                <li>
+                    <a href="#hizmetlerimiz"
+                        class="block py-2 pl-3 pr-4 text-white border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-red-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Hizmetlerimiz</a>
+                </li>
+                <li>
+                    <a href="urunkatologu.html"
+                        class="block py-2 pl-3 pr-4 text-white border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-red-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ürün Kataloğu</a>
+                </li>
+                <li>
+                    <a href="galeri.html"
+                        class="block py-2 pl-3 pr-4 text-white border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-red-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Galeri</a>
+                </li>
+                <li>
+                    <a href="iletisim.html"
+                        class="block py-2 pl-3 pr-4 text-white border-b border-gray-700 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-red-500 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Yeni Kart Bölümü -->
+  <section class="bg-black py-16 text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+            <a href="iletisim.html" class="group block no-underline hover:no-underline">
+                <div class="flex flex-col rounded-lg sm:flex-row border border-gray-700 py-1 px-1 w-full text-center sm:text-left transition-all duration-300 group-hover:bg-white h-full">
+                    <div class="flex-shrink-0 m-4 w-16 h-16 rounded-full bg-gray-600 self-center flex items-center justify-center">
+                        <i class="fa-solid fa-handshake text-light group-hover:text-black" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="flex flex-col py-2 pr-2">
+                        <h4 class="text-lg font-light group-hover:text-black no-underline">Teklif Verin</h4>
+                        <p class="text-sm font-hairline text-gray-400 group-hover:text-gray-800">Firmamızla ürün satışı gerçekleştirmek istiyorsanız, lütfen teklif formumuzu doldurunuz. Teklif formuna erişmek için buraya tıklayabilirsiniz.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 mb-4">
+            <a href="urunkatologu.html" class="group block no-underline hover:no-underline">
+                <div class="flex flex-col rounded-lg sm:flex-row border border-gray-700 py-1 px-1 w-full text-center sm:text-left transition-all duration-300 group-hover:bg-white h-full">
+                    <div class="flex-shrink-0 m-4 w-16 h-16 rounded-full bg-gray-600 self-center flex items-center justify-center">
+                        <i class="fa-solid fa-book-open text-light group-hover:text-black" style="font-size: 50px;"></i>
+                    </div>
+                    <div class="flex flex-col py-2 pr-2">
+                        <h4 class="text-lg font-light group-hover:text-black no-underline">Kataloğumuzu İnceleyin</h4>
+                        <p class="text-sm font-hairline text-gray-400 group-hover:text-gray-800">Ürün yelpazemizi ve detayları görmek için katalog sayfamızı inceleyebilirsiniz. Güncel ürün kataloğumuzu incelemek için tıklayınız</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="relative bg-black">
+    <div class="absolute inset-x-0 bottom-0">
+      <svg viewBox="0 0 224 12" fill="currentColor" class="-mb-1 w-full text-white" preserveAspectRatio="none">
+        <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z"></path>
+      </svg>
+    </div>
+    <div class="mx-auto px-4 py-4 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-8">
+      <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl sm:text-center md:max-w-2xl">
+        <h2 class="mb-6 text-center font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">Hizmetlerimiz Ve Markalarımız</h2>
+        <p class="mb-8 text-center text-base text-indigo-200 md:text-lg">Lastik değişimi, bakım ve yol yardım gibi konularda size güvenilir ve hızlı destek sunuyoruz. Bizimle iletişime geçerek hizmetlerimiz hakkında detaylı bilgi alabilirsiniz.</p>
+        <a
+        class="flex items-center justify-center sm:ml-0 mx-auto sm:mx-0 w-fit rounded-lg border-2 border-white px-4 py-2 text-sm leading-[24px] font-medium text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-800 focus:outline-none sm:mr-2 lg:px-5 lg:py-2.5"
+        href="/add">
+        Detaylı Bilgi
+        <svg class="ml-2 inline h-6 w-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+          width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2"></path>
+        </svg>
+      </a>
+      
+
+        <p class="mb-10 max-w-md text-xs tracking-wide text-indigo-100 sm:mx-auto sm:text-sm md:mb-8"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container py-5" id="hizmetlerimiz">
+  <div class="row">
+    <div class="col-sm-6 mb-4">
+      <article
+      class="group relative isolate flex h-full flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto">
+      <img src="../images/hizmetlerimiz/yolyardim2.jpg" alt="7/24 Yol Yardım" class="absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+      <div class="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100"></div>
+      <h3 class="z-10 mt-3 text-3xl font-bold text-white">7/24 Yol Yardım</h3>
+      <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 opacity-100 transform transition-all duration-300 lg:opacity-0 lg:translate-y-8 lg:group-hover:opacity-100 lg:group-hover:translate-y-0">Aracınızla yolda kalma durumunda, günün her saati yanınızdayız. Profesyonel ekibimizle, güvenli ve hızlı yol yardım hizmeti sunuyoruz.</div>
+    </article>
+    </div>
+    <div class="col-sm-6 mb-4">
+      <article
+      class="group relative isolate flex h-full flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto">
+      <img src="../images/hizmetlerimiz/agirvasita.jpg" alt="Ağır Vasıta Lastikleri" class="absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+      <div class="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100"></div>
+      <h3 class="z-10 mt-3 text-3xl font-bold text-white">Ağır Vasıtalar İçin Yerinde Lastik Değişimi</h3>
+      <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 opacity-100 transform transition-all duration-300 lg:opacity-0 lg:translate-y-8 lg:group-hover:opacity-100 lg:group-hover:translate-y-0">Traktör, biçerdöver, kamyon ve otobüs gibi ağır vasıtalar için yerinde lastik değişim hizmetimiz; alanında uzman 
+        teknik kadromuz tarafından, bulunduğunuz konuma en kısa sürede ulaşarak profesyonel şekilde sunulmaktadır.</div>
+    </article>
+    </div>
+    <div class="col-sm-6 mb-4">
+      <article
+      class="group relative isolate flex h-full flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto">
+      <img src="../images/hizmetlerimiz/lastikoteli.jpg" alt="Lastik Oteli" class="absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+      <div class="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100"></div>
+      <h3 class="z-10 mt-3 text-3xl font-bold text-white">Lastik Oteli</h3>
+      <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 opacity-100 transform transition-all duration-300 lg:opacity-0 lg:translate-y-8 lg:group-hover:opacity-100 lg:group-hover:translate-y-0">Mevsimlik lastiklerinizi, ideal koşullarda güvenle saklamak için lastik oteli hizmetimizden faydalanın.</div>
+    </article>
+    </div>
+    <div class="col-sm-6 mb-4">
+      <article
+      class="group relative isolate flex h-full flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto">
+      <img src="../images/hizmetlerimiz/rot.jpg" alt="Rot Balans Ayarı" class="absolute inset-0 h-full w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+      <div class="absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100"></div>
+      <h3 class="z-10 mt-3 text-3xl font-bold text-white">Rot & Balans Ayarı</h3>
+      <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300 opacity-100 transform transition-all duration-300 lg:opacity-0 lg:translate-y-8 lg:group-hover:opacity-100 lg:group-hover:translate-y-0">Sürüş güvenliğiniz ve lastik ömrünüz için en son teknoloji cihazlarla rot ve balans ayarı yapıyoruz.</div>
+    </article>
+    </div>
+  </div>
+</div>
+
+  <!-- Markalarımız Bölümü -->
+  <div class="container py-5" id="markalar">
+    <div class="row text-center mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Çözüm Ortaklarımız</h2>
+        <p class="text-gray-700 md:text-lg">Sektörün önde gelen markalarıyla çalışıyoruz.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/petlas.jpg" alt="Alliance" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/starmaxx.png" alt="Apollo" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/bkt.png" alt="BKT" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/milestone.png" alt="Continental" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/ozka.png" alt="Goodyear" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/jantsan.png" alt="Jantsan" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/lassa.jpg" alt="Lassa" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/michelin.png" alt="Michelin" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/mutlu.png" alt="Mutlu Akü" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/nysa.png" alt="Nysa" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/alliance.jpg" alt="Özka" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/goodyear.png" alt="Petlas" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/pirelli.png" alt="Pirelli" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/apollo.jpg" alt="Starmaxx" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/yigit.jpg" alt="Yiğit Akü" class="img-fluid"></div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="p-4 bg-white rounded-lg shadow-sm d-flex align-items-center justify-content-center h-100"><img src="../images/markalar/matador.png" alt="Yiğit Akü" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ürünler Carousel Bölümü -->
+<section class="bg-white px-4 py-12 md:py-24">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">Öne Çıkan Ürünler</h2>
+    <div id="product-carousel-container" class="relative">
+      <div id="product-carousel-track" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+        <!-- 6 ürün kartı -->
+        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center">
+          <div class="max-w-md w-full h-full">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl h-full flex flex-col justify-between">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br"></div>
+                <img src="../images/products/starmaxx1.png" alt="Starmaxx 1" class="w-full h-56 object-contain" >
+                <div class="absolute top-4 right-4 bg-gray-100 text-xs font-bold px-3 py-2 rounded-full z-20 transform rotate-12">YENİ</div>
+              </div>
+              <div class="p-6">
+                <div class="product-card-header">
+                  <img src="../images/markalar/starmaxx.png" alt="" class="product-card-logo">
+                  <h2 class="product-card-model">TR-130</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Yüksek çekiş güçlü traktörler ve biçerdöverler için geliştirilmiş geniş basma alanına sahip traktör ön ve arka aks lastiğidir</p>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold text-black"><i class="fa-solid fa-tractor"></i></span>
+                  <div class="flex items-center">
+                    <span class="ml-1 text-gray-600"><i class="fa-solid fa-gas-pump mr-2"></i><i class="fa-solid fa-volume-high mr-2"></i><i class="fa-solid fa-cloud-sun-rain mr-2"></i></span>
+                  </div>
+                </div>
+                <div class="mobile-center-btn">
+                  <a href="#iletisim">
+                  <button class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"><i class="fa-solid fa-tag"></i>Fiyat Al</button>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center">
+          <div class="max-w-md w-full h-full">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl h-full flex flex-col justify-between">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br"></div>
+                <img src="../images/products/petlas1.png" alt="petlas 1" class="w-full h-56 object-contain" >
+                <div class="absolute top-4 right-4 bg-gray-100 text-xs font-bold px-3 py-2 rounded-full z-20 transform rotate-12">YENİ</div>
+              </div>
+              <div class="p-6">
+                <div class="product-card-header">
+                  <img src="../images/markalar/petlas.jpg" alt="" class="product-card-logo">
+                  <h2 class="product-card-model">Multi Action PT565</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Lüks orta sınıf araçlardan küçük şehir içi araçlarına kadar geniş bir araç yelpazesi için geliştirilmiş 4 mevsim lastiğidir.</p>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold text-black"><i class="fa-solid fa-car"></i></span>
+                  <div class="flex items-center">
+                    <span class="ml-1 text-gray-600"><i class="fa-solid fa-gas-pump mr-2"></i><i class="fa-solid fa-volume-high mr-2"></i><i class="fa-solid fa-cloud-sun-rain mr-2"></i></span>
+                  </div>
+                </div>
+                <div class="mobile-center-btn">
+                  <a href="#iletisim">
+                  <button class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"><i class="fa-solid fa-tag"></i>Fiyat Al</button>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center">
+          <div class="max-w-md w-full h-full">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl h-full flex flex-col justify-between">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br"></div>
+                <img src="../images/products/petlas2.png" alt="petlas 2" class="w-full h-56 object-contain" >
+                <div class="absolute top-4 right-4 bg-gray-100 text-xs font-bold px-3 py-2 rounded-full z-20 transform rotate-12">YENİ</div>
+              </div>
+              <div class="p-6">
+                <div class="product-card-header">
+                  <img src="../images/markalar/petlas.jpg" alt="" class="product-card-logo">
+                  <h2 class="product-card-model">SH100</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Kamyon ve otobüsler için üretilen SH 100, asfalt zeminde dengeli sürüş, mükemmel konfor ve manevra kabiliyeti sunar. Islak zeminde üstün yol tutuşu ve kısa fren mesafesiyle tam güvenlik sağlar.</p>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold text-black"><i class="fa-solid fa-truck-moving"></i></span>
+                  <div class="flex items-center">
+                    <span class="ml-1 text-gray-600"><i class="fa-solid fa-gas-pump mr-2"></i><i class="fa-solid fa-volume-high mr-2"></i><i class="fa-solid fa-cloud-sun-rain mr-2"></i></span>
+                  </div>
+                </div>
+                <div class="mobile-center-btn">
+                  <a href="#iletisim">
+                  <button class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"><i class="fa-solid fa-tag"></i>Fiyat Al</button>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center">
+          <div class="max-w-md w-full h-full">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl h-full flex flex-col justify-between">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br"></div>
+                <img src="../images/products/ozka1.png" alt="Ozka 1" class="w-full h-56 object-contain" >
+                <div class="absolute top-4 right-4 bg-gray-100 text-xs font-bold px-3 py-2 rounded-full z-20 transform rotate-12">YENİ</div>
+              </div>
+              <div class="p-6">
+                <div class="product-card-header">
+                  <img src="../images/markalar/ozka.png" alt="" class="product-card-logo">
+                  <h2 class="product-card-model">KNK - 50</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Açılı bloklarıyla yüksek çekiş kabiliyeti
+                  Taban deseni sayesinde toprak tutmadan hareket etme özelliği
+                  Traktörün hareketi esnasında merkezde kümelenmeyi önleyerek yanlara hareket etmesini engelleme özelliği
+                  Pencereli bloklar sayesinde çamur tahliyesi.</p>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold text-black"><i class="fa-solid fa-tractor"></i></span>
+                  <div class="flex items-center">
+                    <span class="ml-1 text-gray-600"><i class="fa-solid fa-gas-pump mr-2"></i><i class="fa-solid fa-volume-high mr-2"></i><i class="fa-solid fa-cloud-sun-rain mr-2"></i></span>
+                  </div>
+                </div>
+                <div class="mobile-center-btn">
+                  <a href="#iletisim">
+                  <button class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"><i class="fa-solid fa-tag"></i>Fiyat Al</button>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center">
+          <div class="max-w-md w-full h-full">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl h-full flex flex-col justify-between">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br"></div>
+                <img src="../images/products/starmaxx2.png" alt="Starmaxx 2" class="w-full h-56 object-contain" >
+                <div class="absolute top-4 right-4 bg-gray-100 text-xs font-bold px-3 py-2 rounded-full z-20 transform rotate-12">YENİ</div>
+              </div>
+              <div class="p-6">
+                <div class="product-card-header">
+                  <img src="../images/markalar/starmaxx.png" alt="" class="product-card-logo">
+                  <h2 class="product-card-model">TOLERO ST330</h2>
+                </div>
+                <p class="text-gray-600 mb-4">
+
+                  Silikalı sırt karışımı ile kısa fren mesafesi sağlar. Fiyat/performans dengesi ile tükecinin yanındadır. Eksiz topuk teli ve Nylon Cap-Strip özelliğiyle düzgün ve aynı zamanda konforlu sürüş sağlar.</p>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold text-black"><i class="fa-solid fa-car"></i></span>
+                  <div class="flex items-center">
+                    <span class="ml-1 text-gray-600"><i class="fa-solid fa-gas-pump mr-2"></i><i class="fa-solid fa-volume-high mr-2"></i><i class="fa-solid fa-cloud-sun-rain mr-2"></i></span>
+                  </div>
+                </div>
+                <div class="mobile-center-btn">
+                  <a href="#iletisim">
+                  <button class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"><i class="fa-solid fa-tag"></i>Fiyat Al</button>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 w-full md:w-1/3 px-2 snap-center">
+          <div class="max-w-md w-full h-full">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden hover:shadow-3xl h-full flex flex-col justify-between">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br"></div>
+                <img src="../images/products/petlas3.png" alt="petls 3" class="w-full h-56 object-contain" >
+                <div class="absolute top-4 right-4 bg-gray-100 text-xs font-bold px-3 py-2 rounded-full z-20 transform rotate-12">YENİ</div>
+              </div>
+              <div class="p-6">
+                <div class="product-card-header">
+                  <img src="../images/markalar/petlas.jpg" alt="" class="product-card-logo">
+                  <h2 class="product-card-model">TA-110</h2>
+                </div>
+                <p class="text-gray-600 mb-4">Yüksek çekiş güçlü traktörler ve biçerdöverler için geliştirilmiş geniş basma alanına sahip traktör ön ve arka aks lastiğidir.</p>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-2xl font-bold text-black"><i class="fa-solid fa-tractor"></i></span>
+                  <div class="flex items-center">
+                    <span class="ml-1 text-gray-600"><i class="fa-solid fa-gas-pump mr-2"></i><i class="fa-solid fa-volume-high mr-2"></i><i class="fa-solid fa-cloud-sun-rain mr-2"></i></span>
+                  </div>
+                </div>
+                <div class="mobile-center-btn">
+                  <a href="#iletisim">
+                  <button class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"><i class="fa-solid fa-tag"></i>Fiyat Al</button>
+                </a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Buttons -->
+      <button id="product-prev" class="carousel-btn left-0">
+          <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button id="product-next" class="carousel-btn right-0">
+          <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Yorumlar Bölümü -->
+  <section class="bg-white px-4 py-12 md:py-24">
+    <div class="max-w-screen-xl mx-auto">
+      <h2 class="font-black text-black text-center text-3xl leading-none uppercase max-w-2xl mx-auto mb-12">Müşterilerimiz Ne Diyor?</h2>
+      <div class="relative overflow-hidden">
+        <div id="carousel-track" class="flex transition-transform duration-700 ease-in-out">
+          <!-- 5 yorum kartı -->
+          <div class="flex-shrink-0 w-full md:w-1/3 px-2">
+            <div class="bg-gray-100 rounded-lg p-8 text-center flex flex-col items-center h-full">
+              <p class="font-bold text-lg mb-2">Ender Doğdu</p>
+              <p class="text-base font-light italic text-gray-700 mb-4">Fiyatlar oldukça uygun, ilgi ve alaka ise gerçekten takdire şayan. Örneğin, henüz havalar soğumamışken bana kış lastiklerini hemen takmamam konusunda bilgilendirme yapıldı; "Kış lastikleri yumuşak olduğundan erkenden takarsanız aşınma yapabilir" denildi.
+                 Bu hassasiyet için teşekkür ederim. BULVAR OTO LASTİK'e hayırlı ve bereketli kazançlar dilerim.</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-full md:w-1/3 px-2">
+            <div class="bg-gray-100 rounded-lg p-8 text-center flex flex-col items-center h-full">
+              <p class="font-bold text-lg mb-2">Erhan Deveci</p>
+              <p class="text-base font-light italic text-gray-700 mb-4">Aradığınız ebatta lastikleri kolaylıkla bulabileceğiniz, ilgili ve profesyonel bir bayi. Lastikleriniz emanet olarak da güvenle saklanabiliyor. Firma sahibi Halit Bey'e, çalışanlar Mehmet ve Volkan Bey'e ilgilerinden dolayı teşekkür ederim.</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-full md:w-1/3 px-2">
+            <div class="bg-gray-100 rounded-lg p-8 text-center flex flex-col items-center h-full">
+              <p class="font-bold text-lg mb-2">Ömer Sivrikaya</p>
+              <p class="text-base font-light italic text-gray-700 mb-4">Malkara'nın güler yüzlü ve dürüst esnaflarından biri. Her konuda yardımcı olmaya çalışan, işinde ehil ve pratik bir ekip mevcut. Lastikle ilgili tüm ihtiyaçlarınıza profesyonel şekilde çözüm bulabileceğiniz bir yer.</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-full md:w-1/3 px-2">
+            <div class="bg-gray-100 rounded-lg p-8 text-center flex flex-col items-center h-full">
+              <p class="font-bold text-lg mb-2">Erbeyi Güler</p>
+              <p class="text-base font-light italic text-gray-700 mb-4">Deneyimli ve güler yüzlü bir ekipten kaliteli hizmet aldım. Teşekkür ederim.</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-full md:w-1/3 px-2">
+            <div class="bg-gray-100 rounded-lg p-8 text-center flex flex-col items-center h-full">
+              <p class="font-bold text-lg mb-2">Recai Baykuşlar</p>
+              <p class="text-base font-light italic text-gray-700 mb-4">İlgileri gerçekten çok iyi, işçilikleri de aynı şekilde kaliteli ve özenli. Teşekkür ederim.</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <i class="fa-solid fa-star text-yellow-500"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SSS Bölümü -->
+<div class="bg-gradient-to-b from-white to-black" id="sss">
+  <div class="container py-5">
+    <div class="row text-center mb-5">
+      <div class="col-lg-8 mx-auto">
+        <h2 class="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Sıkça sorulan sorular</h2>
+        <p class="text-gray-700 md:text-lg">Araç bakımıyla ilgili en çok merak edilen soruları sizin için derledik. Aşağıda, doğru lastik ve akü seçimi, değişim süreleri ve daha fazlası hakkında bilgilendirici yanıtlar bulabilirsiniz.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="flex flex-col space-y-4">
+          <!-- Soru 1 -->
+          <details class="w-full bg-black/10 p-4 rounded-lg group">
+            <summary class="flex justify-between items-center text-lg font-semibold text-white cursor-pointer list-none">
+              <span>Lastik Ebatları Nasıl Belirlenir?</span>
+              <span class="transition-transform duration-300 transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <div class="mt-4 text-gray-300">
+              <p>Aracınıza uygun lastik ebatları, üretici tarafından belirlenen orijinal ölçülere göre seçilmelidir. Bu bilgiler genellikle araç kapı içi etiketinde, yakıt kapağında ya da kullanım kılavuzunda yer alır. Ebatlar; taban genişliği, yanak yüksekliği ve jant çapını ifade eden sayılardan oluşur (örnek: 205/55 R16). Yanlış ebatta lastik kullanımı; yakıt tüketimi, sürüş güvenliği ve araç dengesini olumsuz etkileyebilir. Emin değilseniz, uzman ekibimizden ücretsiz destek alabilirsiniz.</p>
+            </div>
+          </details>
+          <!-- Soru 2 -->
+          <details class="w-full bg-black/10 p-4 rounded-lg group">
+            <summary class="flex justify-between items-center text-lg font-semibold text-white cursor-pointer list-none">
+              <span>Aracıma Hangi Akü Uygun?</span>
+              <span class="transition-transform duration-300 transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <div class="mt-4 text-gray-300">
+              <p>Her araç tipi için uygun akü farklılık gösterebilir. Doğru aküyü seçmek, hem aracınızın performansı hem de uzun ömürlü kullanım açısından son derece önemlidir. Aracınızın marka ve modeline, motor gücüne, üretim yılına ve donanım özelliklerine göre önerilen akü tipi değişebilir. En doğru tercih için araç üreticinizin teknik verilerine başvurmalı ya da uzman personelimizden destek alarak uygun kapasitedeki (Ah ve CCA değeri) aküyü tercih etmelisiniz.</p>
+            </div>
+          </details>
+          <!-- Soru 3 -->
+          <details class="w-full bg-black/10 p-4 rounded-lg group">
+            <summary class="flex justify-between items-center text-lg font-semibold text-white cursor-pointer list-none">
+              <span>Traktör ve Biçerdöverlerde Lastik Değişim Süreci Nasıldır?</span>
+              <span class="transition-transform duration-300 transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <div class="mt-4 text-gray-300">
+              <p>Tarım araçları, ağır yük altında ve zorlu arazi koşullarında çalıştığı için lastiklerinin dayanıklılığı büyük önem taşır. Traktör ve biçerdöverlerde lastik ömrü genellikle 6 – 10 yıl arasında değişir; ancak toprak yapısı, yükleme sıklığı ve hava basıncı gibi faktörler bu süreyi etkiler. Tarla sezonu öncesi lastiklerde çatlak, diş aşınması veya yanak deformasyonu gibi belirtiler kontrol edilmeli, gerekiyorsa profesyonel servis desteğiyle değiştirilmelidir. Doğru hava basıncı ve balans ayarı, hem yakıt verimliliğini hem de makinenin performansını artırır.</p>
+            </div>
+          </details>
+          <!-- Soru 4 -->
+          <details class="w-full bg-black/10 p-4 rounded-lg group">
+            <summary class="flex justify-between items-center text-lg font-semibold text-white cursor-pointer list-none">
+              <span>Lastikler Ne Sıklıkla Değiştirilmeli?</span>
+              <span class="transition-transform duration-300 transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <div class="mt-4 text-gray-300">
+              <p>Lastiklerin değiştirilme süresi, kullanım sıklığına, sürüş alışkanlıklarına, yol ve hava şartlarına bağlıdır. Ortalama olarak yaz ve kış lastikleri 4 ila 6 yıl arasında performans kaybına uğramaya başlar. Ancak lastiklerin diş derinliği 3 mm'nin altına düştüyse veya yanaklarında çatlama, balon gibi hasarlar oluştuysa değişim zamanı gelmiş demektir. Mevsim geçişlerinde lastik kontrolü yaptırmak ve rotasyon uygulamaları da ömrü uzatmak için önemlidir.</p>
+            </div>
+          </details>
+          <!-- Soru 5 -->
+          <details class="w-full bg-black/10 p-4 rounded-lg group">
+            <summary class="flex justify-between items-center text-lg font-semibold text-white cursor-pointer list-none">
+              <span>Ticari Araçlarda Lastik ve Akü Değişim Sıklığı Nedir?</span>
+              <span class="transition-transform duration-300 transform group-open:rotate-180">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </span>
+            </summary>
+            <div class="mt-4 text-gray-300">
+              <p>Ticari araçlar genellikle uzun mesafe, sık dur-kalk ve yüksek yük altında çalıştıkları için hem lastik hem de aküleri daha hızlı yıpranır. Bu nedenle lastiklerin her 40.000 – 60.000 km aralığında, akülerin ise ortalama 2 – 3 yılda bir kontrol edilmesi ve gerekiyorsa değiştirilmesi önerilir. Ticari araçların güvenliği, iş sürekliliği açısından kritik olduğundan, düzenli bakım ve kontroller ihmal edilmemelidir.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="py-20 bg-black text-white">
+  <div class="container-custom">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Contact Details -->
+      <div class="order-1" id="iletisim">
+        <h2 class="text-3xl font-bold mb-6">
+          Bize <span class="text-red-600">Ulaşın</span>
+        </h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Her türlü soru, öneri ve talepleriniz için bizimle iletişime geçebilirsiniz. Sizlere en kısa süre içerisinde dönüş sağlanacaktır
+        </p>
+        <div class="space-y-6">
+          <!-- Location -->
+          <div class="flex items-start">
+            <svg class="h-6 w-6 text-red-600 mt-1 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 11c1.656 0 3-1.343 3-3s-1.344-3-3-3-3 1.343-3 3 1.344 3 3 3zm0 1c-2.667 0-8 1.333-8 4v2h16v-2c0-2.667-5.333-4-8-4z" />
+            </svg>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Adresimiz</h3>
+              <p class="text-gray-300"> Cami Atik, Atatürk Blv. NO:74/A, 59310 Malkara/Tekirdağ</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-start">
+            <svg class="h-6 w-6 text-red-400 mt-1 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h1l2 5-2 1a11 11 0 006 6l1-2 5 2v1a2 2 0 01-2 2h-1c-6.627 0-12-5.373-12-12V5z" />
+            </svg>
+            <div>
+              <h3 class="font-bold text-lg mb-1">Telefon</h3>
+              <p class="text-gray-300"> 0542 717 22 33</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-start">
+            <svg class="h-6 w-6 text-red-400 mt-1 mr-4 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M16 12l-4-4-4 4m8 0v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4m0-4a2 2 0 012-2h8a2 2 0 012 2v4z" />
+            </svg>
+            <div>
+              <h3 class="font-bold text-lg mb-1">E-posta</h3>
+              <p class="text-gray-300">info@bulvaroto.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <!-- <div class="mt-8 flex space-x-4">
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-amber-500 transition-colors" aria-label="Facebook">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-1 0-1 .5-1 1v1h3l-1 3h-2v7A10 10 0 0022 12z"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-amber-500 transition-colors" aria-label="Instagram">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.5a1 1 0 100 2 1 1 0 000-2z"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-amber-500 transition-colors" aria-label="Twitter">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04A4.26 4.26 0 0016.11 4c-2.36 0-4.27 1.91-4.27 4.27 0 .33.04.66.1.97C7.7 8.99 4.07 7.13 1.64 4.16a4.26 4.26 0 00-.58 2.15c0 1.48.75 2.79 1.88 3.55a4.22 4.22 0 01-1.93-.53v.05c0 2.07 1.47 3.8 3.42 4.19a4.3 4.3 0 01-1.93.07c.55 1.71 2.13 2.96 4 2.99A8.58 8.58 0 012 19.54a12.1 12.1 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.72 8.72 0 0024 5.5a8.52 8.52 0 01-2.54.7z"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-amber-500 transition-colors" aria-label="LinkedIn">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5a2.5 2.5 0 112.5 2.5 2.5 2.5 0 01-2.5-2.5zM3 8h4v12H3zm6 0h3.8v1.75h.05a4.15 4.15 0 013.7-2.05c3.95 0 4.7 2.6 4.7 5.95V20h-4v-5.5c0-1.3-.02-3-1.85-3-1.86 0-2.15 1.45-2.15 2.9V20h-4z"/>
+            </svg>
+          </a>
+        </div> -->
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-gray-800 p-8 rounded-xl order-2">
+        <h3 class="text-2xl font-bold mb-6">İletişim Formu</h3>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Adınız-Soyadınız</label>
+            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500 font-italic" placeholder="Adınız-Soyadınız..." />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">E-posta</label>
+            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500 font-italic" placeholder="E-postanız..." />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Mesajınız</label>
+            <textarea id="message" class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-red-500 font-italic" placeholder="Mesajınız..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-red-500 hover:bg-amber-600 text-black font-bold py-3 px-6 rounded-lg transition-colors">
+            Gönder
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Site İçi Bağlantılar</h4>
+          <ul>
+            <li><a href="kurumsal.html">Hakkımızda</a></li>
+            <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+            <li><a href="#markalar">Markalarımız</a></li>
+            <li><a href="urunkatologu.html>Ürün Katoloğu</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Diğer</h4>
+          <ul>
+            <li><a href="#sss">Sıkça sorulan sorular</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="kurumsal.html">Mevzuat</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Adresimiz</h4>
+          <p class="text-light">
+            Cami Atik, Atatürk Blv. NO:74/A, 59310 Malkara/Tekirdağ
+          </p>
+          </div>
+        <div class="footer-col footer-social-right">
+          <h4>Sosyal Medya Hesaplarımız</h4>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/bulvarotolastikmalkara/?locale=tr_TR"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/bulvarotolastik/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <img src="../images/logo/logo.png" alt="logo" style="width: 20vw;">
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <ul>
+          <li>
+            <p class="text-light">©2025 Tüm Hakları Saklıdır.</p>
+          </li>
+          <li>
+            <a href="//www.dmca.com/Protection/Status.aspx?ID=8267f075-a06d-4103-a686-2fd7f0d4a564" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-11.png?ID=8267f075-a06d-4103-a686-2fd7f0d4a564"  alt="DMCA.com Protection Status" /></a>
+          </li>
+          <li>
+            <p class="text-light">Site Tasarımı: <a class="text-decoration-none text-light" target="_blank" href="https://www.linkedin.com/in/muhammed-salih-acar-206826329/">Muhammed Salih Acar</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+ </footer>
+<!-- Scriptler -->
+
+
+<script src="../javascript/navbar.js"></script>
+<script src="../javascript/carousel.js"></script>
+<script src="../javascript/scrollTop.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

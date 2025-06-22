@@ -1,0 +1,707 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10001;
+    background-color: #8E1616;
+    height: 40px;
+    width: 100%; /* DÜZELTİLDİ */
+  }
+  
+  .header-social a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .header-social a:hover{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .video-banner {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; /* Videoyu en arkaya gönder */
+  }
+  .footer{
+    background-color: #1a1a1a;
+    background-image: url('../images/footer/image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    /* z-index: 2; */
+  }
+  
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 16, 16, 0.7);
+    z-index: 1;
+  }
+  
+  .footer .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  
+  
+  
+  .footer-bottom {
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-bottom .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-bottom li {
+    flex: 1;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom li:first-child {
+    text-align: left;
+  }
+  
+  .footer-bottom li:last-child {
+    text-align: right;
+  }
+  
+  .footer-bottom a {
+    font-weight: 300;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-bottom a:hover {
+    color: #8E1616 !important;
+  }
+  .karartma {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+    z-index: -1; /* Karartmayı videonun üzerine getir */
+    pointer-events: none;
+  }
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    will-change: transform;
+  }
+  .phone-btn {
+    left: 20px;
+    background-color: #8E1616;
+    text-decoration: none;
+  }
+  .whatsapp-btn {
+    right: 20px;
+    background-color: #25D366; 
+    text-decoration: none;
+  }
+  .floating-btn:hover {
+    transform: scale(1.1);
+  }
+  .ripple-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .ripple-container i {
+    font-size: 24px;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: ripple 2s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+  }
+/*   
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  @keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-2px, 2px) rotate(-2deg); }
+    50% { transform: translate(2px, -2px) rotate(2deg); }
+    75% { transform: translate(-2px, -2px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out !important;
+    animation-iteration-count: 1 !important;
+  } */
+
+  .custom-navbar {
+    background: none;
+    position: fixed;
+    margin-top: 50px;
+  }
+
+  /* .custom-navbar .nav-link,
+  .custom-navbar .navbar-brand {
+    color: #fff !important;
+  }*/
+  .downarrow {
+    background: none;
+    z-index: 10000;
+    margin-top: 250px;
+  }
+  @media only screen and (max-width: 600px) {
+    .header-top {
+        width: 100%; /* DÜZELTİLDİ */
+        overflow-x: hidden;
+      }
+    /* .detay{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    } */
+  
+    /* Span'leri tamamen gizle (visibility yerine display kullan) */
+    .header-top .left-info,
+    .header-top .isim {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  
+    /* Container'ı tam genişlik yap */
+    .header-top .container {
+      max-width: 100%;
+      padding: 0 16px;
+    }
+  
+    /* Ortalama için container içeriği düzenle */
+    .header-top .d-flex {
+      justify-content: center !important;
+    }
+  
+    .header-top .header-social {
+        display: none;
+    }
+    .header-top .header-social a{
+        margin-right: 4px;
+    }
+    .navbar-brand{
+        width: 50vw;
+    }
+  }
+  .navbar-transition {
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  #bounce-icon {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  @media(max-width: 575px){
+    .footer-col{
+      width: 100%;
+    }
+  }
+  .container-custom{
+    padding: 0 15px 0 15px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 30s linear infinite;
+  }
+  .product-card {
+    min-height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .productheading{
+    width: 50%;
+    display: inline-block;
+  }
+  
+  /* Product card logo and model styling */
+  .product-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 8px 0;
+  }
+  
+  .product-card-logo {
+    width: 60px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+    padding: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  .product-card-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card-model {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.2;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  .product-card-model:hover {
+    color: #3b82f6;
+    transition: color 0.2s ease;
+  }
+  .catalog-banner {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+  .catalog-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .catalog-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* .productheading img{
+    margin: 20px;
+  } */
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .carousel-btn:hover {
+    background-color: white;
+  }
+
+  .carousel-btn.left-0 {
+    left: 10px;
+  }
+
+  .carousel-btn.right-0 {
+    right: 10px;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Desktop styles for product carousel */
+  @media (min-width: 768px) {
+    #product-carousel-container {
+      overflow: visible;
+    }
+    
+    #product-carousel-track {
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      scroll-behavior: smooth;
+    }
+    
+    #product-carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+    
+    #product-carousel-track > .flex-shrink-0 {
+      width: calc(33.333% - 1rem);
+      flex-shrink: 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #product-carousel-track-container {
+      overflow-x: auto;
+    }
+    
+    #product-carousel-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    #product-carousel-track > .flex-shrink-0 {
+      width: 85%;
+      min-width: 280px;
+      flex-shrink: 0;
+    }
+    
+    .carousel-btn {
+      width: 35px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+
+  /* Mobile button centering */
+  /* @media (max-width: 767px) {
+    .mobile-center-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .mobile-center-btn button {
+      width: 100%;
+      max-width: 300px;
+    }
+  } */
+
+  @import url(https://fonts.googleapis.com/css?family=Poppins:300,700);
+.snip1581 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #2B2B2B;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.snip1581:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.snip1581 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* .snip1581 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  height: 200px;
+  object-fit: cover;
+} */
+.snip1581 img {
+  width: 100%;
+  height: 250px; /* isteğe göre sabit yükseklik */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px; /* isteğe bağlı */
+}
+
+
+.snip1581 figcaption {
+  padding: 20px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.snip1581 .title1,
+.snip1581 .title2,
+.snip1581 .title3 {
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.snip1581 .title1 {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+.snip1581 .title2 {
+  font-size: 1.1em;
+  color: #000000;
+}
+
+.snip1581 .title3 {
+  font-size: 1em;
+  color: #000000;
+}
+
+.snip1581 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.floating-btn.scroll-to-top-btn {
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(131, 126, 126, 0.5); /* Şeffaflık eklendi */
+  backdrop-filter: blur(5px); /* Arka planı bulanıklaştır */
+  -webkit-backdrop-filter: blur(5px); /* Safari için */
+  display: none; /* Varsayılan olarak gizli */
+}
+
+.floating-btn.scroll-to-top-btn:hover {
+  background-color: rgba(131, 126, 126, 0.5);
+}
+
+.floating-btn.whatsapp-btn {
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+}
+
+.floating-btn.whatsapp-btn:hover {
+  background-color: #1ebe57;
+}
+
+.floating-btn .ripple-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.ripple-effect-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+    animation: button-ripple-animation 1.5s ease-out infinite;
+}
+
+@keyframes button-ripple-animation {
+  to {
+    transform: translate(-50%, -50%) scale(15);
+    opacity: 0;
+  }
+}
+
+.floating-btn .ripple {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(0);
+  animation: ripple-effect 1s linear infinite;
+  z-index: 1;
+}
+
+@keyframes ripple-effect {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Mobil menü geçiş efekti */
+#mobile-menu-2 {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.menu-closed {
+  max-height: 0;
+}
+
+.menu-open {
+  max-height: 500px; /* Menü içeriğinin sığacağı bir yükseklik */
+}
+  
