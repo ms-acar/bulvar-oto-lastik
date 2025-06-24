@@ -19,4 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenu.classList.toggle('hidden');
         });
     }
+
+    const menuLinks = mobileMenu.querySelectorAll('a');
+
+    menuLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Check if the link is an anchor link on the same page
+            if (link.getAttribute('href').startsWith('#')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    });
 });

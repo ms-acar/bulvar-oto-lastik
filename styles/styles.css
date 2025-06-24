@@ -5,7 +5,9 @@
     overflow-x: hidden;
     max-width: 100%;
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   .header-top {
     position: fixed;
     top: 0;
@@ -702,6 +704,25 @@
 }
 
 .menu-open {
-  max-height: 500px; /* Menü içeriğinin sığacağı bir yükseklik */
+  max-height: 500px; /* Adjust as needed */
 }
-  
+
+#scroll-image-container {
+  position: relative;
+  height: 250px; 
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8f9fa; /* Yol etkisi için açık gri arkaplan */
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+
+#scrolling-image {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  max-width: 350px;
+  height: auto;
+  z-index: 1;
+}
