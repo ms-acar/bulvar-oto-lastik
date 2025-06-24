@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.bulvarotolastik.com.tr/sitemap.xml
