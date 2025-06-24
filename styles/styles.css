@@ -182,7 +182,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
-    z-index: -1; /* Karartmayı videonun üzerine getir */
+    z-index: 1; /* Karartmayı resmin üzerine getir */
     pointer-events: none;
   }
   .floating-btn {
